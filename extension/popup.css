@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 360px;
+    min-height: 500px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0b1120;
+    color: #ffffff;
+}
+
+
+.container {
+    width: 100%;
+    padding: 18px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #172554;
+
+    font-size: 21px;
+}
+
+.brand h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.brand p {
+    margin-top: 3px;
+
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+
+    box-shadow: 0 0 10px #22c55e;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.label {
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   WEBSITE CARD
+========================= */
+
+.website-card {
+    padding: 15px;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 14px;
+
+    background: #111827;
+
+    margin-bottom: 14px;
+}
+
+.website-info {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.globe {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #172554;
+
+    font-size: 18px;
+}
+
+.url-container {
+    min-width: 0;
+}
+
+.url-container p {
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.url-container span {
+    display: block;
+
+    max-width: 230px;
+
+    font-size: 10px;
+
+    color: #64748b;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card {
+    padding: 17px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        145deg,
+        #0f2a20,
+        #111827
+    );
+
+    border: 1px solid #164e3a;
+
+    margin-bottom: 14px;
+}
+
+.risk-section {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* Risk Circle */
+
+.risk-circle {
+    width: 75px;
+    height: 75px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-radius: 50%;
+
+    border: 5px solid #22c55e;
+
+    background: #0b1f17;
+}
+
+.risk-circle span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.risk-circle small {
+    font-size: 8px;
+
+    color: #64748b;
+}
+
+
+.risk-info h2.warning-text {
+    font-size: 14px;
+
+    margin-bottom: 6px;
+
+    color: #4ade80;
+}
+
+.risk-info p {
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #94a3b8;
+}
+
+
+/* =========================
+   CHECKS
+========================= */
+
+.checks-section {
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background: #111827;
+
+    border: 1px solid #1e293b;
+
+    margin-bottom: 15px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 11px;
+
+    color: #cbd5e1;
+
+    margin-top: 10px;
+}
+
+.check-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #064e3b;
+
+    color: #4ade80;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.analyze-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.analyze-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.analyze-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+footer p {
+    font-size: 9px;
+
+    color: #475569;
+}
+/* WARNING STATUS */
+
+.warning-result {
+    background: linear-gradient(
+        145deg,
+        #422006,
+        #111827
+    );
+
+    border: 1px solid #92400e;
+}
+
+.warning-circle {
+    border-color: #f59e0b;
+    background: #29200b;
+}
+
+.warning-text {
+    color: #fbbf24;
+}
+.warning-icon {
+    border: 1px solid orange;
+    background: #422006;
+    color: #fbbf24;
+}
+/* SAFE STATUS */
+
+.safe-result {
+    background: linear-gradient(145deg, #0f2a20, #111827);
+    border: 1px solid #164e3a;
+}
+
+.safe-circle {
+    border-color: #22c55e;
+    background: #0b1f17;
+}
+
+.risk-info h2.safe-text {
+    color: #4ade80;
+}
+
+
+/* DANGER STATUS */
+
+.danger-result {
+    background: linear-gradient(145deg, #450a0a, #111827);
+    border: 1px solid #991b1b;
+}
+
+.danger-circle {
+    border-color: #ef4444;
+    background: #2b1010;
+}
+
+.risk-info h2.danger-text {
+    color: #f87171;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DomainSentary</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="logo">
+                    🛡️
+                </div>
+
+                <div>
+                    <h1>DomainSentary</h1>
+                    <p>Website Security</p>
+                </div>
+
+            </div>
+
+            <div class="status-dot"></div>
+
+        </header>
+
+
+        <!-- Current Website -->
+        <section class="website-card">
+
+            <p class="label">
+                CURRENT WEBSITE
+            </p>
+
+            <div class="website-info">
+
+                <div class="globe">
+                    🌐
+                </div>
+
+                <div class="url-container">
+
+                    <p id="website-name">
+                        Checking...
+                    </p>
+
+                    <span id="website-url">
+                        Loading current URL...
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Security Result -->
+        <section class="result-card">
+
+            <p class="label">
+                SECURITY STATUS
+            </p>
+
+            <div class="risk-section">
+
+                <div class="risk-circle">
+
+                    <span id="risk-score">
+                        --
+                    </span>
+
+                    <small>
+                        /100
+                    </small>
+
+                </div>
+
+
+                <div class="risk-info">
+
+                    <h2 id="status-text">
+                        Analyzing...
+                    </h2>
+
+                    <p id="status-description">
+                        Please wait while DomainSentary
+                        analyzes this website.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Security Checks -->
+        <section class="checks-section">
+
+            <p class="label">
+                SECURITY CHECKS
+            </p>
+
+            <div id="security-checks">
+
+                <div class="check-item">
+
+                    <span class="check-icon">
+                        •
+                    </span>
+
+                    <span>
+                        Waiting for analysis...
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reasons -->
+        <section
+            class="reasons-section"
+            id="reasons-section"
+            style="display: none;"
+        >
+
+            <p class="label">
+                DETECTION REASONS
+            </p>
+
+            <div id="reasons-list"></div>
+
+        </section>
+
+
+        <!-- Analyze Button -->
+        <button
+            id="analyze-btn"
+            class="analyze-btn"
+        >
+
+            <span>🔍</span>
+
+            Analyze Website
+
+        </button>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                DomainSentary • Website Security
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
